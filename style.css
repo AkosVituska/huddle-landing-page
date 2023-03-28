@@ -19,8 +19,9 @@
   --violet-color: hsl(257, 40%, 25%);
   --soft-magenta-color: hsl(300, 69%, 71%);
   --text-1: 1.8rem;
-  --text-2: 1.25rem;
+  --text-2: 1.4rem;
   --text-3: 1rem;
+  --text-4: .7rem
 }
 /*-------------------------------------*\
 
@@ -31,7 +32,7 @@ font-family: 'Poppins', sans-serif;*/
 
 body {
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.5;
   font-family: 'Open Sans', sans-serif;
   background-color: var(--violet-color); 
   color: white;
@@ -41,13 +42,13 @@ h1, h2 {
 }
 
 /*-------------------------------*\
-#HEADER
+#HEADER STYLE
 \*-------------------------------*/
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 50vh;
+  min-height: 60vh;
   background-image: url(/images/bg-mobile.svg);
   background-size: cover;
 }
@@ -58,15 +59,58 @@ h1, h2 {
 }
 
 .header__img {
-  max-width: calc(100vw - 90px);
+  max-width: calc(100vw - 75px);
 }
 .fa {
-  margin: 1.2rem 0 2.5rem;
+  margin: 1.2rem 0 3rem;
 }
 .title {
   font-family: 'Poppins', sans-serif;
   font-size: var(--text-1);
-  margin: 1.2rem .25rem 2.5rem;
+  margin: 1.2rem .25rem 3rem;
+  font-weight: 600;
 }
 /*------------------------------*\
+#MAIN STYLE
 \*------------------------------*/
+.main {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.main__content {
+  text-align: center;
+}
+.main__title {
+  margin: 1rem 3rem;
+  font-size: var(--text-2);
+  font-weight: 400;
+}
+.main__text {
+  margin: 0 2.2rem;
+  font-size: var(--text-3);
+}
+
+/*------------------------------------*\
+#BUTTON STYLE
+\*------------------------------------*/
+
+.btn {
+  background-color: white;
+  margin: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  border: solid 1px white;
+  border-radius: 50px;
+  padding: .5rem 4rem;
+  color: var(--violet-color);
+  font-size: var(--text-4);
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn:hover {
+  background-color: var(--soft-magenta-color);
+  transform: scale(1.1); 
+  transition: all .5s ease-out .1s;
+  box-shadow: 3px 6px 3px 0 black;
+}
